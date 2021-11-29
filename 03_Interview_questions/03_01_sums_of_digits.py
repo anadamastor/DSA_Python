@@ -16,11 +16,11 @@ f(n) = n%10 + f(n//10)
 '''
 
 def sum_of_digits(digit):
-  assert digit >= 0 and int(digit) == digit, "Only >= 0 numbers" 
+  assert digit >= 0 and int(digit) == digit, "Only integer >= 0 numbers" 
   if digit == 0:
     return digit
   else:
     return (sum_of_digits(digit // 10) + digit % 10)
 
 
-print(sum_of_digits(101))
+print(sum_of_digits(-101))
