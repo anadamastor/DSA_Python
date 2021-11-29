@@ -13,7 +13,7 @@ SUMS OF DIGITS OF POSITIVE INTEGER WITH RECURSION
 
 so finally it becomes:
 f(n) = n%10 + f(n//10)
-'''
+'''s
 
 def sum_of_digits(digit):
   assert digit >= 0 and int(digit) == digit, "Only >= 0 numbers" 
