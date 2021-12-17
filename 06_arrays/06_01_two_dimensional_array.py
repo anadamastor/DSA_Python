@@ -55,4 +55,13 @@ def searchTwoDimArray(array, value):
   return "the element is not found"
 
 print(twoArray)
-print(searchTwoDimArray(twoArray, 2))
+print(searchTwoDimArray(twoArray, 44))
+
+# delete column or row in two dim arrays
+print("Delete column or row in two dim arrays")
+# we use numpy for that, axis 0 is row an 1 is column. THe first
+# number identifies the number of row/column to delete
+new_two_dim_array = np.delete(twoArray, 1, axis = 0) # 
+print(twoArray)
+print("deleting a row")
+print(new_two_dim_array)
