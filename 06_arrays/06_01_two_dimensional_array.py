@@ -33,3 +33,26 @@ def access_element(array,row_index,col_index):
 
 print(twoArray)
 access_element(twoArray,1,1)
+
+# Traversing two dimensional  array
+print("array traversing")
+def traverse(array):
+  for i in range (len(array)): # numbers of rows
+    for j in range(len(array[0])): # number of colums
+      print(array[i][j]) # for each row we are traversing all columns
+traverse(twoArray)
+# prin takes constant time complexity.
+
+# Searching for an element in two dim arrays
+print("Searching for an element in two dim arrays")
+# using linear search: search for every elemnt until it finds what we are looking for
+def searchTwoDimArray(array, value):
+  print(f"you are looking for {value}")
+  for i in range(len(array)):
+    for j in range(len(array[0])):
+      if array[i][j] == value:
+        return f"the value is located at index {i} {j}"
+  return "the element is not found"
+
+print(twoArray)
+print(searchTwoDimArray(twoArray, 2))
