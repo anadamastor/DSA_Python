@@ -3,17 +3,17 @@
 list_1 = [1,3,2]
 list_2 = [2,3,1]
 
-# def check_permutation(list_1,list_2):
-#     if len(list_1) != len(list_2):
-#         return False
-#     output = False
-#     for letter_1 in list_1:
-#         if letter_1 in list_2:
-#             output = True
-#         else:
-#             output = False
-#     return output
-# print(check_permutation(list_1,list_2))
+def check_permutation(list_1,list_2):
+    if len(list_1) != len(list_2):
+        return False
+    output = False
+    for letter in list_1:
+        if letter in list_2:
+            list_2.pop(letter)
+        else:
+            output = False
+    return True
+print(check_permutation(list_1,list_2))
 
 def check_permutation_2(list_1,list_2):
     if len(list_1) != len(list_2):
