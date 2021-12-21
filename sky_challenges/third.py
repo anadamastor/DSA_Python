@@ -9,3 +9,4 @@ def solution(T):
     return (f"{hours}h{min}m{sec}s")
 
 print(solution(7200))
+
