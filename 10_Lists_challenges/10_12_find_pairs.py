@@ -1,0 +1,1 @@
+# Find all pairs of an integer whose sum is qeual to number
