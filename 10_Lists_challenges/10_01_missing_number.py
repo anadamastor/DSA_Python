@@ -1,5 +1,5 @@
 # Find the missing number in an array of integer 1 to 100
-array = list(range(101))
+array = list(range(10))
 print(array)
 
 # My solution______________________________

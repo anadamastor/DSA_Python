@@ -9,13 +9,15 @@ matr = [
 
 def rotate_matrix_in(matr):
     print("In place approach: \n", np.matrix(matr))
-    n = len(matr)
+    n = len(matr) 
     for i in range(n): # i are rows
         for j in range(i):
             matr[i][j], matr[j][i] = matr[j][i], matr[i][j]
     print(np.matrix(matr))
 
 # rotate_matrix_in(matr)
+
+
 
 
 def rotate_matrix(matr):
@@ -27,5 +29,6 @@ def rotate_matrix(matr):
             new_arr[i][j] = matr[j][j]
     print("New array: \n", np.matrix(new_arr))
 
-rotate_matrix(matr)
 
+if __name__ == "__main__":
+    rotate_matrix(matr)
