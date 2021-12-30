@@ -27,6 +27,6 @@ print(mydict)
 print(mydict.clear())
 print(mydict)
 
-#! delete one key/value pair
+#! Delete one key/value pair
 del mydict["age"]
 

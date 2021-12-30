@@ -25,7 +25,7 @@ def rotate_matrix(matr):
     new_arr = [[0,0,0],[0,0,0],[0,0,0]]
     n = len(matr)
     for i in range(n): # i are rows
-        for j in range(n): 
+        for j in range(n):  
             new_arr[i][j] = matr[j][j]
     print("New array: \n", np.matrix(new_arr))
 
